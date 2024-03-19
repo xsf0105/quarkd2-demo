@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarkc + Vite</title>
+    <style>
+      quark-button::part(root) {
+        color: yellow;
+      }
+      quark-noticebar::part(text) {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    e.g.
+    <br />
+    <quark-button type="primary">🚀 what's up, homie.</quark-button>
+
+    <br />
+    <br />
+    <br />
+    e.g.
+    <quark-noticebar
+      text="🚀 what's up, homie. It's Quark design."
+    ></quark-noticebar>
+  </body>
+
+  <script type="module">
+    import 'quarkd/lib/button';
+    import 'quarkd/lib/noticebar';
+  </script>
+</html>
